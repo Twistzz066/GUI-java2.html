@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Java — Tutormatch</title>
+<style>
+:root{
+  --bg:#f5f7fb; --card:#ffffff; --muted:#6b7280; --accent:#3b82f6; --radius:12px; --gap:14px; --max-width:1100px;
+}
+*{box-sizing:border-box} html,body{height:100%}
+body{font-family:Inter, system-ui, -apple-system,"Segoe UI",Roboto,Arial;margin:0;background:linear-gradient(180deg,#f7f9fc,#eef2f7);color:#0b1220;display:flex;justify-content:center;padding:28px 18px;}
+.container{width:100%;max-width:var(--max-width);}
+.header{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+.logo{width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#60a5fa);display:grid;place-items:center;color:white;font-weight:700;font-size:18px;box-shadow:0 8px 20px rgba(59,130,246,0.18);}
+.card{background:var(--card);padding:16px;border-radius:var(--radius);box-shadow:0 8px 30px rgba(12,18,30,0.06);border:1px solid rgba(11,18,32,0.04)}
+.tutor{display:flex;gap:12px;align-items:center;margin-top:12px;padding:12px;border-radius:10px;background:linear-gradient(180deg,rgba(2,6,23,0.01),rgba(2,6,23,0));border:1px solid rgba(11,18,32,0.03)}
+.avatar{width:96px;height:96px;border-radius:10px;object-fit:cover}
+.details{flex:1}
+.btn{display:inline-block;padding:8px 12px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#60a5fa);color:white;text-decoration:none;font-weight:600}
+.small{color:var(--muted);font-size:14px}
+.back{display:inline-block;margin-bottom:12px;text-decoration:none;color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="container">
+  <a class="back" href="index.html">← Back to Tutors</a>
+  <div class="header">
+    <div class="logo">TM</div>
+    <div>
+      <h1 style="margin:0 0 6px 0;">Java</h1>
+      <div class="small">A high-level, object-oriented programming language that is platform-independent and widely used for building applications across different devices.</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3 style="margin:0 0 8px 0;">Available Tutors</h3>
+
+<!-- Rion -->
+    <a class="tutor" href="tutors/rion.html">
+      <img class="avatar" src="https://scontent.fmnl4-3.fna.fbcdn.net/v/t1.15752-9/582063331_1955543195019986_4039948178830860374_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeFa5_BlQFlTetFqAIMDcJItnc3JpVl96K-dzcmlWX3or9CYS3wuRV6vcgwEsLGLxpNnJYIvU4feHGvCXDrENkPi&_nc_ohc=ijmuoubT2ukQ7kNvwHAyCeB&_nc_oc=Adn3G_Dou-OO8GyvCKsaI7Otx6g1pcLGqVkSLDitmZNLGHBdrRSbK8BsyaJguHoEXH4VQJMWMsy9BqGyU-2XGhJ3&_nc_zt=23&_nc_ht=scontent.fmnl4-3.fna&oh=03_Q7cD3wHsoZcWCAg8AcMncjYB2JtWPABUvwkvCfbPfjhXG0-ldQ&oe=6948AFF8" onerror="this.src='https://via.placeholder.com/96?text=R'">
+      <div class="details">
+        <div style="font-weight:700">Rion <span style="font-weight:600;color:var(--muted);">• PHP 150/h</span></div>
+        <div class="small">Teaches: Java, Html, Math, English, Science</div>
+      </div>
+      <div><span class="btn">View profile</span></div>
+    </a>
+
+<!-- Vincent -->
+    <a class="tutor" href="tutors/contridas.html">
+      <img class="avatar" src="https://scontent.fmnl4-4.fna.fbcdn.net/v/t1.15752-9/578798004_1173902248167310_8242735647307374849_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeF6Jrxa40HLZhFqrCa3pm_wynNjgVBI5p7Kc2OBUEjmnq4fqarEVWLZSolM0hYqcpdnIMNHoAblYUFq417sRuh3&_nc_ohc=AiTeS1gUTiEQ7kNvwGKbmts&_nc_oc=AdlIuORs7pLo-QKtjHFCyLtLJDWA7p22qNXBquSD2Vu56tbN7gBZ-Sw1DBIvbsFcADdroaqSvjzDCngLvKJ6ecks&_nc_zt=23&_nc_ht=scontent.fmnl4-4.fna&oh=03_Q7cD3wEnmgCBTlkmsBCv0IaJrdX7Dh75_px86lIvr4LSLDf6oQ&oe=6948A2F8" onerror="this.src='https://via.placeholder.com/96?text=C'">
+      <div class="details">
+        <div style="font-weight:700">Contridas <span style="font-weight:600;color:var(--muted);">• PHP 165/h</span></div>
+        <div class="small">Teaches: C++, Python, Science, Html, Java</div>
+      </div>
+      <div><span class="btn">View profile</span></div>
+    </a>
+
+<!-- Nico -->
+    <a class="tutor" href="tutors/pinlac.html">
+      <img class="avatar" src="https://scontent.fmnl4-3.fna.fbcdn.net/v/t1.15752-9/553433380_779259181776504_253786785176171819_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeEiB8SrRteVTZO1uRtm8KjJWqRstkwV-oBapGy2TBX6gPUMURjghUND2MQNOLWg2-cfXOQFPz0_Bro5LVRmeV1G&_nc_ohc=ZWUKGRL36DkQ7kNvwEirnAN&_nc_oc=AdkVH1hRt1L8K1DRGoqhNc_fthaXuxyQ9IVPVu_1sbRyqAnR4n74lE2CilfyW3Hp6cUwqeSl4xnW30orciJPJkhi&_nc_zt=23&_nc_ht=scontent.fmnl4-3.fna&oh=03_Q7cD3wF5gdIim0v1H_znpDlaR_9MtCQ0JpOZZizuekW38D0d8w&oe=6948C2AF" onerror="this.src='https://via.placeholder.com/96?text=P'">
+      <div class="details">
+        <div style="font-weight:700">Pinlac <span style="font-weight:600;color:var(--muted);">• PHP 180/h</span></div>
+        <div class="small">Teaches: English, Java, Html, Javascript, Philosophy</div>
+      </div>
+      <div><span class="btn">View profile</span></div>
+    </a>
+
+<!-- Me -->
+    <a class="tutor" href="tutors/sandoval.html">
+      <img class="avatar" src="https://scontent.fmnl4-7.fna.fbcdn.net/v/t1.15752-9/582050736_1577879766677915_8024456873630415932_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeEoVxetc7vBCJg1_2o8kh7MW7bfJwM7FN5btt8nAzsU3vbPjCUxGz_IGM5g56j64o8Y6lq0dzN39wclksf8ewM9&_nc_ohc=zTKH_6O5vfUQ7kNvwGJbhoM&_nc_oc=AdlLVkw0SK9wHwPZLlFow0BrVurq_RRlvFfAcHzlynFeYfVIBWjqs3Bxa-XOJiMzF2A9-JNTf5JwgTNu0XAv2Wvl&_nc_zt=23&_nc_ht=scontent.fmnl4-7.fna&oh=03_Q7cD3wHW8DJlj3Adm_f9dm0gx-w0EuqsE4mf8KUivgENqy1A7A&oe=6948AEC0" onerror="this.src='https://via.placeholder.com/96?text=S'">
+      <div class="details">
+        <div style="font-weight:700">Sandoval <span style="font-weight:600;color:var(--muted);">• PHP 175/h</span></div>
+        <div class="small">Teaches: Java, Html, C++, Python, Javascript</div>
+      </div>
+      <div><span class="btn">View profile</span></div>
+    </a>
+
+  </div>
+</div>
+</body>
+</html>
